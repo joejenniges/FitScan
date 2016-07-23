@@ -4,28 +4,28 @@ from PySide import QtGui, QtCore
 from PySide.QtGui import QApplication, QMessageBox
 import pyperclip
 
-from fitscan.views.ui_mainWindow import Ui_MainWindow
+from views.ui_mainWindow import Ui_MainWindow
 
-class ClipboardThread(QtCore.QThread):
-    def __init__(self, MainWindow):
-        QtCore.QThread.__init__(self)
+
+class ClipThread(QtCore.QObject):
+    finished = QtCore.Signal(str)
+
+    def __init__(self, MainWindow, parent=None):
+        super(ClipThread, self).__init__(parent)
         self.window = MainWindow
         self.last_clipboard = pyperclip.paste()
+        self.active = True
+        print 'init'
 
-    def run(self):
-        print 'Running Thread'
-        while True:
+    def process(self):
+        print 'running'
+        while self.active:
             if (self.window.monitorClipboard):
                 tmp_val = pyperclip.paste()
                 if (tmp_val != self.last_clipboard):
                     self.last_clipboard = tmp_val
                     self.window.handleClipboard(tmp_val)
         time.sleep(0.1)
-
-    def stop(self):
-        self.terminate()
-
-
 
 class MainWindow(QtGui.QMainWindow):
     def __init__(self, parent=None):
@@ -40,8 +40,8 @@ class MainWindow(QtGui.QMainWindow):
         self.ui.pushButton_stop.clicked.connect(self.stopClipboard)
         self.ui.pushButton_clear.clicked.connect(self.clearFitting)
 
-        self.threads = []
-        self.startClipboardThread()
+        self.clipboard_thread = None
+        # self.startClipboardThread()
 
         self.setupFitTable()
 
@@ -55,10 +55,7 @@ class MainWindow(QtGui.QMainWindow):
         self.ui.tableWidget_fit.setColumnWidth(0, 400)
         self.ui.tableWidget_fit.setColumnWidth(1, 50)
 
-    def startClipboardThread(self):
-        clipboard = ClipboardThread(self)
-        self.threads.append(clipboard)
-        clipboard.start()
+
 
     def handleClipboard(self, clip):
         lines = clip.splitlines()
@@ -100,23 +97,39 @@ class MainWindow(QtGui.QMainWindow):
         self.ui.tableWidget_fit.setRowCount(0)
         self.items = {}
 
+    def startClipboardThread(self):
+        self.clipboard_thread = QtCore.QThread()
+        self.clipThread = ClipThread(self)
+        self.clipThread.moveToThread(self.clipboard_thread)
+        self.clipboard_thread.started.connect(self.clipThread.process)
+        self.clipboard_thread.start()
+
     def startClipboard(self):
         if (self.ui.pushButton_start.isEnabled()):
             self.ui.pushButton_start.setEnabled(False)
             self.ui.pushButton_stop.setEnabled(True)
-            self.monitorClipboard = True
+            self.startClipboardThread()
+            # self.monitorClipboard = True
 
+    def stopClipboardThread(self):
+        self.clipThread.active = False
+        self.clipboard_thread.quit()
+        while(self.clipboard_thread.isRunning()):
+            time.sleep(0.01)
+        self.clipThread = None
+        self.clipboard_thread = None
 
     def stopClipboard(self):
         if (self.ui.pushButton_stop.isEnabled()):
             self.ui.pushButton_stop.setEnabled(False)
             self.ui.pushButton_start.setEnabled(True)
-            self.monitorClipboard = False
+            self.stopClipboardThread()
 
     def sysexit(self):
         if QMessageBox.question(None, '', "Are you sure you want to quit?",
                                 QMessageBox.Yes | QMessageBox.No,
                                 QMessageBox.No) == QMessageBox.Yes:
+            self.stopClipboardThread()
             QApplication.quit()
 
 def run():
