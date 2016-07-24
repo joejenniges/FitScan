@@ -139,7 +139,11 @@
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QTableWidget" name="tableWidget_fit"/>
+     <widget class="QTableWidget" name="tableWidget_fit">
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
