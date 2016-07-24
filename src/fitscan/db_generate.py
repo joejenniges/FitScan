@@ -5,14 +5,16 @@ import sys
 from urllib2 import urlopen, HTTPError, URLError
 
 
-def main():
+def getItemSlots():
     base_url   = "https://www.fuzzwork.co.uk/dump/latest/"
 
-    db_dir     = os.path.join("..", "..", "resources", "db")
-    dgm_file   = os.path.join(db_dir, "typeEffects.csv.bz2")
-    types_file = os.path.join(db_dir, "invTypes.csv.bz2")
-    dgm_db     = os.path.join(db_dir, "typeEffects.csv")
-    types_db   = os.path.join(db_dir, "invTypes.csv")
+    db_dir                   = os.path.join("..", "..", "resources", "db")
+
+    dgmTypeEffects_archive   = os.path.join(db_dir, "dgmTypeEffects.csv.bz2")
+    dgmTypeEffects           = os.path.join(db_dir, "dgmTypeEffects.csv")
+
+    invTypes_archive         = os.path.join(db_dir, "invTypes.csv.bz2")
+    invTypes                 = os.path.join(db_dir, "invTypes.csv")
 
     slot_map   = os.path.join(db_dir, "slotMap.csv")
 
@@ -23,16 +25,15 @@ def main():
     EFFECT_RIGSLOT  = 2663
 
     dogma_effects = {}
-    types   = {}
     nameSlots = {}
 
-    # download(base_url + "dgmTypeEffects.csv.bz2", dgm_file)
-    # download(base_url + "invTypes.csv.bz2", types_file)
-    #
-    # decompress(dgm_file, dgm_db)
-    # decompress(types_file, types_db)
+    download(base_url + "dgmTypeEffects.csv.bz2", dgmTypeEffects_archive)
+    download(base_url + "invTypes.csv.bz2", invTypes_archive)
 
-    with open(dgm_db, 'rb') as file:
+    decompress(dgmTypeEffects_archive, dgmTypeEffects)
+    decompress(invTypes_archive, invTypes)
+
+    with open(dgmTypeEffects, 'rb') as file:
         print 'Reading Dogma Effects'
         reader = csv.reader(file, delimiter=',', quotechar='"')
         for row in reader:
@@ -45,7 +46,7 @@ def main():
                 dogma_effects[typeID] = [effectID]
         file.close()
 
-    with open(types_db, 'rb') as file:
+    with open(invTypes, 'rb') as file:
         print 'Reading Item Names'
         reader = csv.reader(file, delimiter=',', quotechar='"')
         i = 1
@@ -83,6 +84,53 @@ def main():
             file.write("{},{}\n".format(typeName, slot))
         file.close()
 
+def getShips():
+    SHIP_CATEGORY = 6
+    SLOTS_HIGH    = 14
+    SLOTS_MID     = 13
+    SLOTS_LOW     = 12
+    SLOTS_RIG     = 1137
+    SLOTS_SUB     = 1367
+
+    SLOTS_MOD_HIGH = 1374
+    SLOTS_MOD_MID  = 1375
+    SLOTS_MOD_LOW  = 1376
+
+    base_url = "https://www.fuzzwork.co.uk/dump/latest/"
+
+    db_dir = os.path.join("..", "..", "resources", "db")
+
+    invGroups_archive = os.path.join(db_dir, "invGroups.csv.bz2")
+    invGroups         = os.path.join(db_dir, "invGroups.csv")
+
+    invTypes_archive  = os.path.join(db_dir, "invTypes.csv.bz2")
+    invTypes          = os.path.join(db_dir, "invTypes.csv")
+
+    dgmTypeAttributes_archive = os.path.join(db_dir, "dgmTypeAttributes.csv.bz2")
+    dgmTypeAttributes         = os.path.join(db_dir, "dgmTypeAttributes.csv")
+
+    download(base_url + "invGroups.csv.bz2", invGroups_archive)
+    download(base_url + "invTypes.csv.bz2", invTypes_archive)
+    download(base_url + "dgmTypeAttributes", dgmTypeAttributes_archive)
+
+    decompress(invGroups_archive, invGroups)
+    decompress(invTypes_archive, invTypes)
+    decompress(dgmTypeAttributes_archive, dgmTypeAttributes)
+
+    shipGroups = []
+    ships      = {}
+
+    # Get all ship types based on ship category
+    for row in readCsv(invGroups):
+        groupID = row[0]
+        categoryID = row[1]
+
+        if categoryID == SHIP_CATEGORY:
+            shipGroups.append(groupID)
+
+
+def readCsv(file):
+    return csv.reader(file, delimiter=',', quotechar='"')
 
 def hasEffect(dogma_effects, type_id, slot_type):
     return type_id in dogma_effects.keys() and str(slot_type) in dogma_effects[type_id]
@@ -113,6 +161,9 @@ def decompress(zip, file):
         for data in iter(lambda : in_file.read(100*1024), b''):
             out_file.write(data)
 
+def main():
+    getItemSlots()
+    getShips()
 
 if __name__ == "__main__":
     main()

@@ -3,8 +3,11 @@
 *.iws
 .idea/
 *.pyc
++.spec
 
 dist/
+build
 
-resources/db/invTypes.csv*
-resources/db/typeEffects*
+resources/db/*
+!resources/db/slotMap.csv
+/*.spec
