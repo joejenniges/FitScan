@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'resources\ui\mainwindow.ui'
 #
-# Created: Sun Jul 24 16:00:40 2016
+# Created: Sun Jul 24 20:12:10 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -201,14 +201,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.addWidget(self.listWidget_subsystems)
         spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.verticalLayout_3.addItem(spacerItem1)
-        self.groupBox_2 = QtGui.QGroupBox(self.centralWidget)
-        self.groupBox_2.setGeometry(QtCore.QRect(640, 270, 181, 231))
-        self.groupBox_2.setTitle("")
-        self.groupBox_2.setObjectName("groupBox_2")
-        self.plainTextEdit = QtGui.QPlainTextEdit(self.groupBox_2)
-        self.plainTextEdit.setEnabled(False)
-        self.plainTextEdit.setGeometry(QtCore.QRect(10, 10, 161, 211))
-        self.plainTextEdit.setObjectName("plainTextEdit")
+        self.label_2 = QtGui.QLabel(self.centralWidget)
+        self.label_2.setGeometry(QtCore.QRect(640, 270, 181, 261))
+        self.label_2.setWordWrap(True)
+        self.label_2.setObjectName("label_2")
         MainWindow.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(MainWindow)
@@ -234,12 +230,6 @@ class Ui_MainWindow(object):
         self.label_rig_count.setText(QtGui.QApplication.translate("MainWindow", "Count: 0", None, QtGui.QApplication.UnicodeUTF8))
         self.label_subsystems.setText(QtGui.QApplication.translate("MainWindow", "Subsystems", None, QtGui.QApplication.UnicodeUTF8))
         self.label_subsystem_count.setText(QtGui.QApplication.translate("MainWindow", "Count: 0", None, QtGui.QApplication.UnicodeUTF8))
-        self.plainTextEdit.setPlainText(QtGui.QApplication.translate("MainWindow", "How to use:\n"
-"1. Start clipboard monitoring\n"
-"2. Scan ships, select all (ctrl + a), and copy (ctrl + v)\n"
-"3. Once you are satisfied, STOP the monitoring\n"
-"4. Copy the fit using the button. It only lists metal scrap as the ship until I can get the rest working\n"
-"5. The Ship box does not work yet\n"
-"6. Contact GunfighterJ with questions", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("MainWindow", "<html><head/><body><p>How to use:</p><p>1. Start clipboard monitoring</p><p>2. Scan ships, select all (ctrl + a), and copy (ctrl + c)</p><p>3. Once you are satisfied, STOP the monitoring</p><p>4. Copy the fit using the button. It only lists metal scrap as the ship until I can get the rest working</p><p>5. The Ship box does not work yet</p><p>6. Contact GunfighterJ with questions</p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
 
 import resources_rc 

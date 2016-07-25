@@ -1,10 +1,13 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource>
         <file>db/slotMap.csv</file>
+        <file>db/shipMap.csv</file>
+        <file>db/subsystemMap.csv</file>
         <file>img/slot_high_small.png</file>
         <file>img/slot_med_small.png</file>
         <file>img/slot_low_small.png</file>
         <file>img/slot_rig_small.png</file>
         <file>img/slot_subsystem_small.png</file>
+        <file>img/icon.png</file>
     </qresource>
 </RCC>

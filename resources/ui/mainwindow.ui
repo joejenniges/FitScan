@@ -475,40 +475,21 @@
      </item>
     </layout>
    </widget>
-   <widget class="QGroupBox" name="groupBox_2">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>640</x>
       <y>270</y>
       <width>181</width>
-      <height>231</height>
+      <height>261</height>
      </rect>
     </property>
-    <property name="title">
-     <string/>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;How to use:&lt;/p&gt;&lt;p&gt;1. Start clipboard monitoring&lt;/p&gt;&lt;p&gt;2. Scan ships, select all (ctrl + a), and copy (ctrl + c)&lt;/p&gt;&lt;p&gt;3. Once you are satisfied, STOP the monitoring&lt;/p&gt;&lt;p&gt;4. Copy the fit using the button. It only lists metal scrap as the ship until I can get the rest working&lt;/p&gt;&lt;p&gt;5. The Ship box does not work yet&lt;/p&gt;&lt;p&gt;6. Contact GunfighterJ with questions&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
-    <widget class="QPlainTextEdit" name="plainTextEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>161</width>
-       <height>211</height>
-      </rect>
-     </property>
-     <property name="plainText">
-      <string>How to use:
-1. Start clipboard monitoring
-2. Scan ships, select all (ctrl + a), and copy (ctrl + v)
-3. Once you are satisfied, STOP the monitoring
-4. Copy the fit using the button. It only lists metal scrap as the ship until I can get the rest working
-5. The Ship box does not work yet
-6. Contact GunfighterJ with questions</string>
-     </property>
-    </widget>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
   </widget>
  </widget>

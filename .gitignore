@@ -10,4 +10,6 @@ build
 
 resources/db/*
 !resources/db/slotMap.csv
+!resources/db/shipMap.csv
+!resources/db/subsystemMap.csv
 /*.spec

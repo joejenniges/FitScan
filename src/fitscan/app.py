@@ -45,6 +45,10 @@ class MainWindow(QtGui.QMainWindow):
         self.ui.pushButton_clear.clicked.connect(self.clearFitting)
         self.ui.pushButton_copy.clicked.connect(self.copyFitting)
 
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/img/icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.setWindowIcon(icon)
+
         completer = QtGui.QCompleter(['Tengu', 'Proteus', 'Loki', 'Legion'], self)
         completer.setCaseSensitivity(QtCore.Qt.CaseInsensitive)
         self.ui.lineEdit_ship.setCompleter(completer)
