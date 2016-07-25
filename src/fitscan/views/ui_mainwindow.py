@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'resources\ui\mainwindow.ui'
 #
-# Created: Sun Jul 24 22:37:01 2016
+# Created: Mon Jul 25 11:09:12 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,7 +14,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(830, 550)
         MainWindow.setMinimumSize(QtCore.QSize(830, 550))
-        MainWindow.setMaximumSize(QtCore.QSize(999999, 999999))
+        MainWindow.setMaximumSize(QtCore.QSize(830, 550))
         self.centralWidget = QtGui.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.groupBox = QtGui.QGroupBox(self.centralWidget)
@@ -219,10 +219,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.addWidget(self.listWidget_subsystems)
         spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.verticalLayout_3.addItem(spacerItem1)
-        self.label_2 = QtGui.QLabel(self.centralWidget)
-        self.label_2.setGeometry(QtCore.QRect(640, 270, 181, 261))
-        self.label_2.setWordWrap(True)
-        self.label_2.setObjectName("label_2")
+        self.pushButton_help = QtGui.QPushButton(self.centralWidget)
+        self.pushButton_help.setGeometry(QtCore.QRect(650, 270, 161, 23))
+        self.pushButton_help.setObjectName("pushButton_help")
         MainWindow.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(MainWindow)
@@ -249,6 +248,6 @@ class Ui_MainWindow(object):
         self.label_rig_count.setText(QtGui.QApplication.translate("MainWindow", "Count: 0", None, QtGui.QApplication.UnicodeUTF8))
         self.label_subsystems.setText(QtGui.QApplication.translate("MainWindow", "Subsystems", None, QtGui.QApplication.UnicodeUTF8))
         self.label_subsystem_count.setText(QtGui.QApplication.translate("MainWindow", "Count: 0", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_2.setText(QtGui.QApplication.translate("MainWindow", "<html><head/><body><p>How to use:</p><p>1. Start clipboard monitoring</p><p>2. Scan ships, select all (ctrl + a), and copy (ctrl + c)</p><p>3. Once you are satisfied, STOP the monitoring</p><p>4. Copy the fit using the button. It only lists metal scrap as the ship until I can get the rest working</p><p>5. The Ship box does not work yet</p><p>6. Contact GunfighterJ with questions</p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_help.setText(QtGui.QApplication.translate("MainWindow", "Help", None, QtGui.QApplication.UnicodeUTF8))
 
 import resources_rc 

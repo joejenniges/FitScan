@@ -18,8 +18,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>999999</width>
-    <height>999999</height>
+    <width>830</width>
+    <height>550</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -518,20 +518,17 @@
      </item>
     </layout>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QPushButton" name="pushButton_help">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>650</x>
       <y>270</y>
-      <width>181</width>
-      <height>261</height>
+      <width>161</width>
+      <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;How to use:&lt;/p&gt;&lt;p&gt;1. Start clipboard monitoring&lt;/p&gt;&lt;p&gt;2. Scan ships, select all (ctrl + a), and copy (ctrl + c)&lt;/p&gt;&lt;p&gt;3. Once you are satisfied, STOP the monitoring&lt;/p&gt;&lt;p&gt;4. Copy the fit using the button. It only lists metal scrap as the ship until I can get the rest working&lt;/p&gt;&lt;p&gt;5. The Ship box does not work yet&lt;/p&gt;&lt;p&gt;6. Contact GunfighterJ with questions&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
+     <string>Help</string>
     </property>
    </widget>
   </widget>

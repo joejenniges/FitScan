@@ -9,6 +9,7 @@ from PySide.QtGui import QApplication, QMessageBox
 import pyperclip
 
 from views.ui_mainwindow import Ui_MainWindow
+from views.ui_instructions import Ui_Instructions
 
 
 class ClipThread(QtCore.QObject):
@@ -44,6 +45,7 @@ class MainWindow(QtGui.QMainWindow):
         self.ui.lineEdit_ship.returnPressed.connect(self.processShipType)
         self.ui.lineEdit_ship.editingFinished.connect(self.processShipType)
         self.ui.pushButton_submit_ship.clicked.connect(self.processShipType)
+        self.ui.pushButton_help.clicked.connect(self.showInstructions)
 
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":img/icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -101,6 +103,10 @@ class MainWindow(QtGui.QMainWindow):
         completer = QtGui.QCompleter(sorted(self.shipMap.keys()), self)
         completer.setCaseSensitivity(QtCore.Qt.CaseInsensitive)
         self.ui.lineEdit_ship.setCompleter(completer)
+
+    def showInstructions(self):
+        instructions = InstructionDialog()
+        instructions.exec_()
 
     def setupLabelIcons(self):
         self.ui.label_highslot_icon.setPixmap(QtGui.QPixmap(":img/slot_high_small.png"))
@@ -343,6 +349,19 @@ class MainWindow(QtGui.QMainWindow):
                                 QMessageBox.Yes | QMessageBox.No,
                                 QMessageBox.No) == QMessageBox.Yes:
             self.stop()
+
+class InstructionDialog(QtGui.QDialog, Ui_Instructions):
+    def __init__(self, parent=None):
+        super(InstructionDialog, self).__init__(parent)
+        self.setupUi(self)
+
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":img/icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.setWindowIcon(icon)
+
+        self.setWindowFlags(QtCore.Qt.WindowSystemMenuHint | QtCore.Qt.WindowTitleHint)
+
+        self.pushButton_OK.clicked.connect(self.close)
 
 def run():
     app = QtGui.QApplication(sys.argv)
