@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>Instructions</class>
  <widget class="QDialog" name="Instructions">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -21,9 +24,6 @@
     <width>400</width>
     <height>300</height>
    </size>
-  </property>
-  <property name="contextMenuPolicy">
-   <enum>Qt::NoContextMenu</enum>
   </property>
   <property name="windowTitle">
    <string>Instructions</string>

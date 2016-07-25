@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'resources\ui\instructions.ui'
 #
-# Created: Mon Jul 25 11:09:12 2016
+# Created: Mon Jul 25 14:55:08 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,10 +12,10 @@ from PySide import QtCore, QtGui
 class Ui_Instructions(object):
     def setupUi(self, Instructions):
         Instructions.setObjectName("Instructions")
+        Instructions.setEnabled(True)
         Instructions.resize(400, 300)
         Instructions.setMinimumSize(QtCore.QSize(400, 300))
         Instructions.setMaximumSize(QtCore.QSize(400, 300))
-        Instructions.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
         self.label = QtGui.QLabel(Instructions)
         self.label.setGeometry(QtCore.QRect(20, 10, 361, 271))
         self.label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)

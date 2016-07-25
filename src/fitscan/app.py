@@ -37,7 +37,7 @@ class MainWindow(QtGui.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.ui.pushButton_exit.clicked.connect(self.sysexit)
+        # self.ui.pushButton_exit.clicked.connect(self.sysexit)
         self.ui.pushButton_start.clicked.connect(self.startClipboard)
         self.ui.pushButton_stop.clicked.connect(self.stopClipboard)
         self.ui.pushButton_clear.clicked.connect(self.clearFitting)
