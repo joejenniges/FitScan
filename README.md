@@ -10,6 +10,9 @@ Ship scanners in EVE Online do not show the entirety of a ship's fit on a single
 * choose a ship to know when you have filled all slots
 * Easy fitting export by copying to clipboard
 
+## Demo Video
+[![FitScan Video](https://img.youtube.com/vi/BdUpzK7ohfI/0.jpg)](https://youtu.be/BdUpzK7ohfI)
+
 ## Releases
 Binaries are found [Here](https://github.com/gunfighterj/fitscan/releases)
 
