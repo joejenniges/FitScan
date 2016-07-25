@@ -204,6 +204,7 @@ class MainWindow(QtGui.QMainWindow):
             self.startClipboard()
 
     def copyFitting(self):
+        self.stopClipboard()
         fit = []
         ship = self.shipName if self.shipName else 'Metal Scraps'
         fit.append("[{}, New Fit]".format(ship))
