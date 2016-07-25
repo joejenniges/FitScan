@@ -107,12 +107,11 @@ def getShips():
 
     shipMap = os.path.join(dbDir, "shipMap.csv")
 
-    # invTypes already downloaded
-    # download(base_url + "invGroups.csv.bz2", invGroups_archive)
-    # download(base_url + "dgmTypeAttributes.csv.bz2", dgmTypeAttributes_archive)
-    #
-    # decompress(invGroups_archive, invGroups)
-    # decompress(dgmTypeAttributes_archive, dgmTypeAttributes)
+    download(base_url + "invGroups.csv.bz2", invGroups_archive)
+    download(base_url + "dgmTypeAttributes.csv.bz2", dgmTypeAttributes_archive)
+
+    decompress(invGroups_archive, invGroups)
+    decompress(dgmTypeAttributes_archive, dgmTypeAttributes)
 
     shipGroups = []
     ships      = {}
@@ -323,8 +322,8 @@ def decompress(zip, file):
             out_file.write(data)
 
 def main():
-    # getItemSlots()
-    # getShips()
+    getItemSlots()
+    getShips()
     getSubsystems()
 
 if __name__ == "__main__":
