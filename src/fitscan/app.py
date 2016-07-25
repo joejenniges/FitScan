@@ -20,25 +20,21 @@ class ClipThread(QtCore.QObject):
         pyperclip.copy('')
         self.last_clipboard = ''
         self.active = True
-        print 'init'
 
     def process(self):
-        print 'running'
         while self.active:
             tmp_val = pyperclip.paste()
             if tmp_val != self.last_clipboard:
                 self.last_clipboard = tmp_val
                 self.copied.emit(tmp_val)
                 # self.window.handleClipboard(tmp_val)
-        time.sleep(0.1)
+            time.sleep(0.1)
 
 class MainWindow(QtGui.QMainWindow):
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
-        self.monitorClipboard = False
 
         self.ui.pushButton_exit.clicked.connect(self.sysexit)
         self.ui.pushButton_start.clicked.connect(self.startClipboard)
@@ -57,7 +53,6 @@ class MainWindow(QtGui.QMainWindow):
 
         self.clipboard_thread = None
         self.clipThread       = None
-        # self.startClipboardThread()
 
         self.items = {}
         self.mapped_items = {
@@ -153,6 +148,7 @@ class MainWindow(QtGui.QMainWindow):
     def handleClipboard(self, clip):
         print 'Clipboarding'
         clipboard_lines = clip.splitlines()
+        print clipboard_lines
 
         temp_items = {}
 
@@ -194,13 +190,16 @@ class MainWindow(QtGui.QMainWindow):
         self.updateCountLabels()
 
     def clearFitting(self):
-        for key in self.mapped_items:
+        print 'Clearing Fit'
+        self.items = {}
+        for key in self.mapped_items.keys():
             self.mapped_items[key]["items"] = []
             if key is not "C":
                 self.mapped_items[key]["list"].clear()
         self.updateCountLabels()
+        wasEnabled = self.ui.pushButton_stop.isEnabled()
         self.stopClipboard()
-        if self.ui.pushButton_start.isEnabled():
+        if wasEnabled:
             self.startClipboard()
 
     def copyFitting(self):
@@ -242,7 +241,6 @@ class MainWindow(QtGui.QMainWindow):
             self.ui.pushButton_start.setEnabled(False)
             self.ui.pushButton_stop.setEnabled(True)
             self.startClipboardThread()
-            # self.monitorClipboard = True
 
     def stopClipboardThread(self):
         self.clipThread.active = False
@@ -258,7 +256,7 @@ class MainWindow(QtGui.QMainWindow):
             self.ui.pushButton_start.setEnabled(True)
             self.stopClipboardThread()
 
-    def setLabelMessage(self, label, message, color):
+    def setLabelMessage(self, label, message, color="black"):
         label.setText(message)
         label.setStyleSheet("color: {}".format(color))
 
