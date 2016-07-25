@@ -19,7 +19,8 @@ FitScan is licensed under the GNU GPL v3.0, see LICENSE
 You can contact GunfighterJ in-game, or @GunfighterJ on #devfleet on tweetfleet slack
 
 ## Credits
-Credits to [ShortCircuit](https://github.com/farshield/shortcircuit) for being a reference to me learning PySide :)
+Credits to [ShortCircuit](https://github.com/farshield/shortcircuit) for being a reference to me learning PySide
+
 Credits to [PyFa](https://github.com/pyfa-org/Pyfa/) for slot images (let me know if this is a licensing issue)
 
 ## CCP Copyright Notice
