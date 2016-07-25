@@ -1,4 +1,5 @@
 # FitScan
+![FitScan](http://i.imgur.com/22wPFdm.png)
 
 ## Description
 Ship scanners in EVE Online do not show the entirety of a ship's fit on a single run. This tool helps automatically compile the fits into an easy to see solution, with the ability to export the fit once you are done.
