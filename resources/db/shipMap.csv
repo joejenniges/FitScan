@@ -1,8 +1,9 @@
-Pontifex,5,3,5,2,0
+shipName,High,Mid,Low,Rig,SubsystemsPontifex,5,3,5,2,0
 Fiend,5,7,5,2,0
 Slasher,4,4,2,3,0
 Kronos Inner Zone Shipping Edition,8,4,7,2,0
 Opux Dragoon Yacht,5,8,5,3,0
+Porpoise,4,4,2,3,0
 Civilian Gallente Shuttle,0,0,0,0,0
 Dominix Navy Issue,6,6,7,3,0
 Kitsune,3,5,2,2,0
@@ -30,7 +31,7 @@ Scythe Fleet Issue,5,5,5,3,0
 Caldari Navy Hookbill,3,5,2,3,0
 Vigilant,5,4,6,3,0
 InterBus Shuttle,0,0,0,0,0
-Jackdaw,6,6,2,3,0
+Jackdaw,6,5,3,3,0
 Incursus Inner Zone Shipping Edition,3,3,4,3,0
 SOCT 1,3,2,2,3,0
 Merlin,3,4,3,3,0
@@ -44,6 +45,7 @@ Bowhead,0,3,3,3,0
 Helios,2,5,3,2,0
 Civilian Caldari Shuttle,0,0,0,0,0
 Crucifier,2,4,3,3,0
+Caedes,4,3,5,2,0
 Gold Magnate,3,4,6,3,0
 Mackinaw ORE Development Edition,2,4,3,2,0
 Concord Special Ops Frigate,4,3,3,3,0
@@ -55,6 +57,7 @@ Cruor,4,3,4,3,0
 Intaki Syndicate Catalyst,8,2,3,3,0
 Vargur,8,6,5,2,0
 Ishtar,4,4,6,2,0
+Molok,8,5,8,3,0
 Kishar,2,2,4,2,0
 Vexor Quafe Edition,4,4,5,3,0
 Nemesis,5,4,2,2,0
@@ -65,7 +68,7 @@ Providence,0,0,3,0,0
 Exequror Navy Issue,5,4,6,3,0
 Vanquisher,8,6,8,3,0
 Golem Guristas Edition,8,7,4,2,0
-Revelation Sarum Edition,4,4,8,3,0
+Revelation Sarum Edition,0,0,0,0,0
 Vigil Fleet Issue,3,4,3,3,0
 Keres,2,5,3,2,0
 Myrmidon,5,5,6,3,0
@@ -93,6 +96,7 @@ Bhaalgorn,7,5,7,3,0
 Nidhoggur,5,6,5,3,0
 Lif,6,6,5,3,0
 Civilian Minmatar Shuttle,0,0,0,0,0
+Dagon,6,4,7,3,0
 Legion,0,0,0,3,5
 Condor,4,4,2,3,0
 Hurricane,7,4,6,3,0
@@ -124,7 +128,7 @@ Mackinaw,2,4,3,2,0
 Maulus,2,4,3,3,0
 Daredevil,3,3,4,3,0
 Devourer,3,2,3,3,0
-Phoenix Wiyrkomi Edition,4,7,5,3,0
+Phoenix Wiyrkomi Edition,0,0,0,0,0
 Fury,3,3,1,3,0
 Thrasher Thukker Tribe Edition,8,3,2,3,0
 Quafe Catalyst,8,2,3,3,0
@@ -132,7 +136,7 @@ Astero,2,4,4,3,0
 Apotheosis,0,0,0,0,0
 Bantam,3,4,2,3,0
 Omen Tash-Murkon Edition,5,3,6,3,0
-Procurer,1,4,2,3,0
+Procurer,2,4,2,3,0
 Concord SWAT Frigate,4,3,3,3,0
 Vehement,5,6,7,3,0
 Buzzard,3,5,2,2,0
@@ -189,7 +193,7 @@ Vargur Justice Edition,8,6,5,2,0
 Worm,3,4,2,3,0
 Immovable Enigma,7,8,7,3,0
 Navitas,3,3,3,3,0
-Naglfar Justice Edition,5,6,6,3,0
+Naglfar Justice Edition,0,0,0,0,0
 Eris,8,2,4,2,0
 Lachesis,4,7,4,2,0
 Kestrel,4,4,2,3,0
@@ -208,7 +212,7 @@ Stabber,6,4,4,3,0
 Talwar,7,3,3,3,0
 Raven Guristas Edition,7,7,5,3,0
 Ibis,2,2,2,0,0
-Covetor,3,1,2,3,0
+Covetor,2,1,3,3,0
 Hawk,5,5,2,2,0
 Thorax,5,4,5,3,0
 Harbinger,7,4,6,3,0
@@ -234,6 +238,7 @@ Bellicose,4,5,4,3,0
 Breacher,3,4,3,3,0
 Atron,4,3,3,3,0
 Algos,6,3,3,3,0
+Chemosh,5,4,8,3,0
 Typhoon Fleet Issue,8,5,7,3,0
 Sleipnir,7,5,5,2,0
 Sigil,2,4,6,3,0
@@ -259,7 +264,7 @@ Sabre,8,4,2,2,0
 Immolator,2,3,2,0,0
 Golem Nugoeihuvi Edition,8,7,4,2,0
 Stratios,5,5,5,3,0
-Hulk,3,4,2,2,0
+Hulk,2,4,3,2,0
 Megathron Inner Zone Shipping Edition,7,4,8,3,0
 Manticore,5,4,2,2,0
 Moa,5,5,4,3,0
@@ -268,7 +273,7 @@ Primae,0,0,4,0,0
 Caldari Shuttle,0,0,0,0,0
 Amarr Media Shuttle,0,0,0,0,0
 Erinye,6,4,2,2,0
-Skiff,1,5,3,2,0
+Skiff,2,5,3,2,0
 Vexor Navy Issue,4,4,6,3,0
 Nereus,2,5,5,3,0
 Concord Army Battleship,8,6,6,3,0
@@ -309,6 +314,7 @@ Hyperion Inner Zone Shipping Edition,7,5,7,3,0
 Orthrus,6,5,4,3,0
 Nomad,0,0,3,0,0
 Harbinger Navy Issue,7,5,6,3,0
+Sunesis,4,4,4,3,0
 Magnate,3,3,4,3,0
 Kronos,8,4,7,2,0
 Reaper,2,2,2,0,0
@@ -345,7 +351,7 @@ Avatar,8,5,8,3,0
 灾难级YC117年特别版,8,4,7,3,0
 响尾蛇级YC117年特别版,6,7,6,3,0
 Corax,7,4,2,3,0
-Orca,3,4,2,3,0
+Orca,6,5,2,3,0
 Wreathe,2,5,5,3,0
 Tempest Fleet Issue,8,5,7,3,0
 Raven State Issue,8,6,6,3,0
@@ -411,7 +417,7 @@ Stabber Fleet Issue,5,4,6,3,0
 Cyclone Thukker Tribe Edition,7,5,5,3,0
 Impairor,2,2,2,0,0
 Noctis,8,2,3,3,0
-Moros Interbus Edition,4,5,7,3,0
+Moros Interbus Edition,0,0,0,0,0
 Republic Fleet Firetail,3,4,3,3,0
 Chameleon,4,7,4,2,0
 Obelisk,0,0,3,0,0
@@ -453,6 +459,7 @@ Retribution,5,2,5,2,0
 Concord Special Ops Battleship,8,6,6,3,0
 Vargur Krusual Edition,8,6,5,2,0
 Jaguar,4,4,4,2,0
+Rabisu,6,3,6,2,0
 Ashimmu,5,4,6,3,0
 乌鸦级YC117年特别版,7,7,5,3,0
 Moracha,4,6,5,2,0
