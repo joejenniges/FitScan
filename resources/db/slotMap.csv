@@ -8,7 +8,6 @@ Republic Fleet Ballistic Control System,L
 Gotan's Modified Tracking Enhancer,L
 Capital Remote Shield Booster I,H
 Large Subordinate Screen Stabilizer I,M
-Standup M-Set Drone and Fighter Manufacturing Time Efficiency I,R
 Medium Signal Disruption Amplifier I,R
 Corelum A-Type Energized EM Membrane,L
 Bomb Launcher II,H
@@ -93,7 +92,6 @@ Small Infectious Scoped Energy Neutralizer,H
 Unit W-634's Modified Drone Damage Amplifier,L
 Medium Remote Armor Repairer I,H
 Focused Anode Medium Particle Stream I,H
-‘Ligature’ Integrated Analyzer,M
 Draclira's Modified Kinetic Plating,L
 Large 'Hope' Hull Reconstructor I,M
 Standup L-Set Advanced Component Manufacturing Efficiency I,R
@@ -252,6 +250,7 @@ Dual 650mm Prototype Automatic Cannon,H
 E500 Prototype Energy Vampire,H
 Partial Weapon Navigation,M
 Large Energy Metastasis Adjuster II,R
+Vadari's Custom Gyrostabilizer,L
 Mizuro's Modified Tracking Enhancer,L
 CONCORD 200mm Autocannon,H
 Limited Neutron Blaster I,H
@@ -463,6 +462,7 @@ Small Plasma Smartbomb II,H
 Vizan's Modified Mega Pulse Laser,H
 Shadow Serpentis Heavy Warp Scrambler,M
 Small Remote Repair Augmentor I,R
+Standup M-Set Ammunition Manufacturing Time Efficiency II,R
 Conjunctive Ladar ECCM Scanning Array I,M
 Brokara's Modified Energized Thermal Membrane,L
 True Sansha Cap Recharger,M
@@ -534,6 +534,7 @@ Caldari Navy 425mm Railgun,H
 Hakim's Modified Heavy Warp Scrambler,M
 Sisters Expanded Probe Launcher,H
 Makur's Modified Warp Disruptor,M
+Standup M-Set Drone and Fighter Manufacturing Time Efficiency I,R
 Ahremen's Modified Adaptive Nano Plating,L
 Standup L-Set Fighter Mission Control I,R
 Basic EM Plating,L
@@ -635,7 +636,7 @@ Federation Navy Omnidirectional Tracking Link,M
 Unit F-435454's Modified Drone Navigation Computer,M
 Medium 'Vehemence' Shockwave Charge,H
 Small Cargohold Optimization I,R
-10000MN Monopropellant Enduring Afterburner,M
+Standup M-Set Ammunition Manufacturing Time Efficiency I,R
 Centus B-Type Armor Kinetic Hardener,L
 Medium Nano Armor Repair Unit I,L
 Loki Defensive - Adaptive Shielding,S
@@ -649,6 +650,7 @@ Corpum A-Type Energized Adaptive Nano Membrane,L
 Centum A-Type Medium Armor Repairer,L
 Domination 1400mm Howitzer Artillery,H
 Corpii B-Type Explosive Plating,L
+Standup L-Set Thukker Basic Capital Component Manufacturing Efficiency,R
 Republic Fleet Armor Kinetic Hardener,L
 'Mangonel' Heat Sink I,L
 Medium Capacitor Control Circuit II,R
@@ -830,6 +832,7 @@ Sigma-Nought Tracking Mode I,L
 Corelum A-Type 50MN Microwarpdrive,M
 Centus X-Type Armor EM Hardener,L
 Domination 50MN Microwarpdrive,M
+QA Drone Mega Module,L
 Dual 425mm Carbine Repeating Cannon I,H
 Compressed Enduring Dual 1000mm Railgun,H
 Upgraded Adaptive Nano Plating I,L
@@ -960,6 +963,7 @@ Medium Nanobot Accelerator I,R
 SpaceAnchor,M
 Rash Compact Burst Jammer,M
 Mark I Compact Shield Flux Coil,L
+Display Launcher,H
 75mm Compressed Coil Gun I,H
 Gist C-Type Explosive Deflection Field,M
 Marked Modified SS Expanded Cargo,L
@@ -1032,7 +1036,6 @@ Small Energy Discharge Elutriation II,R
 Dark Blood Medium Armor Repairer,L
 425mm Medium Prototype Automatic Cannon,H
 Republic Fleet 100MN Afterburner,M
-Standup M-Set Advanced Small Ship Manufacturing Time Efficiency I,R
 Cormack's Modified Magnetic Field Stabilizer,L
 Tournament Smartbomb,H
 Loki Offensive - Projectile Scoping Array,S
@@ -1042,6 +1045,7 @@ Gotan's Modified Rapid Heavy Missile Launcher,H
 1400mm Gallium Cannon,H
 Capital Flex Armor Hardener II,L
 Loki Engineering - Capacitor Regeneration Matrix,S
+Standup M-Set Thukker Basic Capital Component Manufacturing Material Efficiency,R
 Remote Sensor Dampener II,M
 True Sansha Micro Capacitor Booster,M
 Extra Ladar ECCM Scanning Array I,M
@@ -1098,6 +1102,7 @@ Caldari Navy 75mm Railgun,H
 Gotan's Modified Ballistic Control System,L
 Capital Armor Repairer I,L
 Heavy Beam Laser I,H
+Standup M-Set Drone and Fighter Manufacturing Time Efficiency II,R
 Armor Kinetic Hardener I,L
 Capital Higgs Anchor I,R
 Industrial Core I,H
@@ -1179,6 +1184,7 @@ Small Higgs Anchor I,R
 Medium Drone Speed Augmentor I,R
 CONCORD Quad 3500mm Siege Artillery,H
 Pandemic SPHERE Modified Entosis Link,H
+Standup L-Set Thukker Advanced Component Manufacturing Efficiency,R
 Standup M-Set TE Research Cost Optimization I,R
 Cormack's Modified Tracking Computer,M
 ‘Holy Destiny’ Electromagnetic Lance,H
@@ -1536,7 +1542,6 @@ Legion Offensive - Covert Reconfiguration,S
 Selynne's Modified Heavy Energy Neutralizer,H
 Small Focused Modal Laser I,H
 Brokara's Modified Explosive Plating,L
-Standup M-Set Drone and Fighter Manufacturing Material Efficiency II,R
 Thon's Modified Co-Processor,L
 'Thurifer' Large Cap Battery,M
 Selynne's Modified Armor EM Hardener,L
@@ -1560,12 +1565,14 @@ Khanid Navy Rocket Launcher,H
 Heavy F-RX Prototype Capacitor Boost,M
 Small Anti-Explosive Screen Reinforcer I,R
 Gistum A-Type Explosive Deflection Amplifier,M
+Standup M-Set Missile Projection II,R
 Partial Hull Conversion Expanded Cargo,L
 Gloom Enduring Radar ECM,M
 Medium Graviton Smartbomb II,H
 Medium Salvage Tackle II,R
 Large Clarity Ward Booster I,M
 Small S95a Scoped Remote Shield Booster,H
+Zeugma Integrated Analyzer,M
 Cormack's Modified Power Diagnostic System,L
 'Broker' Remote Sensor Dampener I,M
 Ahremen's Modified Heavy Energy Neutralizer,H
@@ -2365,7 +2372,6 @@ Propellant Injection Vent I,R
 Upgraded Energized Armor Layering Membrane I,L
 Pithum A-Type EM Ward Amplifier,M
 Shielded Ladar Backup Cluster I,L
-Standup L-Set Drone and Fighter Manufacturing Efficiency I,R
 Vepas' Modified Cloaking Device,H
 Domination Heavy Stasis Grappler,M
 Small Targeting System Subcontroller I,R
@@ -2523,6 +2529,7 @@ Tracking Enhancer II,L
 50MN Digital Booster Microwarpdrive,M
 Quantum Co-Processor,L
 N-JM Compact Omnidirectional Tracking Enhancer,L
+Standup L-Set Drone and Fighter Manufacturing Efficiency I,R
 Local Power Plant Manager: Capacity Power Relay I,L
 Dark Blood Capital Armor Repairer,L
 Draclira's Modified Capacitor Power Relay,L
@@ -2874,7 +2881,7 @@ Energized Armor Layering Membrane II,L
 Clone Vat Bay I,H
 Pith B-Type Large Shield Booster,M
 Dual Modulated Light Energy Beam I,H
-Standup M-Set ME Research Accelerator I,R
+Standup L-Set Ammunition Manufacturing Efficiency I,R
 Pithi B-Type Small Remote Shield Booster,H
 Medium Ancillary Current Router II,R
 True Sansha Small Energy Nosferatu,H
@@ -2929,12 +2936,12 @@ Brynn's Modified Adaptive Nano Plating,L
 Upgraded Explosive Plating I,L
 Anode Scoped Quad Mega Pulse Laser,H
 Capital Hybrid Discharge Elutriation I,R
-Standup L-Set Drone and Fighter Manufacturing Efficiency II,R
 Large Tracking Diagnostic Subroutines I,R
 Alpha Hull Mod Nanofiber Structure,L
 Medium Remote Armor Repairer II,H
 Imperial Navy Energized Explosive Membrane,L
 125mm Railgun II,H
+10000MN Monopropellant Enduring Afterburner,M
 Medium Targeting System Subcontroller I,R
 Spectre Fleet's Modified Entosis Link,H
 Limited 'Limos' Rapid Light Missile Launcher,H
@@ -3179,7 +3186,7 @@ Coreli B-Type EM Plating,L
 Centum B-Type Energized EM Membrane,L
 Medium Tech I Medium Ship Research II,R
 Capital Hybrid Collision Accelerator II,R
-Standup M-Set Drone and Fighter Manufacturing Material Efficiency I,R
+Standup M-Set Advanced Small Ship Manufacturing Time Efficiency I,R
 Centii C-Type EM Plating,L
 Hakim's Modified Heavy Warp Disruptor,M
 Small Emission Scope Sharpener I,R
@@ -3187,6 +3194,7 @@ Estamel's Modified Adaptive Invulnerability Field,M
 Medium Consumable Research II,R
 Vizan's Modified Energized Explosive Membrane,L
 Ammatar Navy Cap Recharger,M
+QA Tracking Enhancer,L
 Small Trimark Armor Pump I,R
 CONCORD Heavy Pulse Laser,H
 Standup L-Set TE Research Optimization II,R
@@ -3243,6 +3251,7 @@ Sentient Signal Amplifier,L
 Small Energy Nosferatu II,H
 Shadow Serpentis Adaptive Nano Plating,L
 Small 'Arup' Remote Armor Repairer,H
+Standup L-Set Drone and Fighter Manufacturing Efficiency II,R
 Capital Energy Discharge Elutriation I,R
 Federation Navy Armor EM Hardener,L
 Missile Guidance Enhancer I,L
@@ -3250,7 +3259,6 @@ Siege Warfare Link - Active Shielding II,H
 Dark Blood Adaptive Nano Plating,L
 Mega Modal Pulse Laser I,H
 Ionic Field Accelerator I,M
-Standup M-Set Ammunition Manufacturing Time Efficiency II,R
 Medium Knave Scoped Energy Nosferatu,H
 Standup M-Set TE Research Cost Optimization II,R
 Vepas' Modified Large Graviton Smartbomb,H
@@ -3278,7 +3286,6 @@ Small Hybrid Burst Aerator II,R
 Medium Rudimentary Concussion Bomb I,H
 Tuvan's Modified Energized EM Membrane,L
 Tengu Offensive - Rifling Launcher Pattern,S
-Standup L-Set Ammunition Manufacturing Efficiency I,R
 'Arbalest' Heavy Missile Launcher,H
 Large Murky Remote Capacitor Transmitter,H
 Pith C-Type X-Large Shield Booster,M
@@ -3406,6 +3413,7 @@ Nanomechanical CPU Enhancer,L
 CONCORD Modified Warp Scrambler,M
 Small Remote Capacitor Transmitter I,H
 5MN Cold-Gas Enduring Microwarpdrive,M
+Kaatara's Custom Magnetic Field Stabilizer,L
 Torpedo Launcher I,H
 Multi Sensor Backup Array I,L
 Medium Trimark Armor Pump II,R
@@ -3465,6 +3473,7 @@ Capital Energy Neutralizer II,H
 Gist B-Type X-Large Shield Booster,M
 Dark Blood Capital Cap Battery,M
 'Balefire' Rocket Launcher,H
+Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency,R
 Federation Navy 500MN Microwarpdrive,M
 Medium Drone Speed Augmentor II,R
 Upgraded Armor EM Hardener I,L
@@ -3487,7 +3496,7 @@ Capital Hybrid Collision Accelerator I,R
 Estamel's Modified Explosive Deflection Field,M
 'Langour' Drive Disruptor I,M
 Unit F-435454's Modified Drone Link Augmentor,H
-‘Zeugma’ Integrated Analyzer,M
+Standup M-Set Drone and Fighter Manufacturing Material Efficiency II,R
 Small Degenerative Concussion Bomb I,H
 Standup Point Defense Battery I,H
 Small Tracking Diagnostic Subroutines I,R
@@ -3647,7 +3656,6 @@ Marked Modified SS Overdrive Injector,L
 Pithum A-Type Explosive Deflection Amplifier,M
 Tairei's Modified Heat Sink,L
 Small Salvage Tackle II,R
-Standup M-Set Ammunition Manufacturing Material Efficiency I,R
 Raysere's Modified Cap Recharger,M
 Ahremen's Modified EM Plating,L
 Republic Fleet Warp Disruptor,M
@@ -3683,7 +3691,6 @@ Drone Damage Amplifier I,L
 Medium Powergrid Subroutine Maximizer I,R
 Magnetic Vortex Stabilizer,L
 Medium Higgs Anchor I,R
-Standup M-Set Drone and Fighter Manufacturing Time Efficiency II,R
 'Basic' Expanded Cargohold,L
 Local Power Plant Manager: Capacitor Flux I,L
 'Investor' Tracking Disruptor I,M
@@ -3716,6 +3723,7 @@ Small Command Processor I,R
 'Micro' Remote Shield Booster,H
 X-Large Asymmetric Remote Shield Booster,H
 Small Core Defense Capacitor Safeguard II,R
+Ligature Integrated Analyzer,M
 Basic Energized Kinetic Membrane,L
 Kaikka's Modified 425mm Railgun,H
 Small Algid Hybrid Administrations Unit II,R
@@ -3924,6 +3932,7 @@ Standup XL-Set Reprocessing Monitor I,R
 5MN Digital Booster Microwarpdrive,M
 200mm Light Gallium Machine Gun,H
 Protected Multi-Frequency Backup Cluster I,L
+Defender Launcher I,H
 Shadow Serpentis Tracking Computer,M
 Dual 650mm Repeating Cannon II,H
 Pith B-Type Kinetic Deflection Field,M
@@ -4094,7 +4103,7 @@ Aergia Compact Magnetometric ECM,M
 Surplus Magnetometric Reserve Array,L
 Standup AXL Missile Launcher I,H
 Gotan's Modified Heavy Warp Scrambler,M
-Standup M-Set Ammunition Manufacturing Time Efficiency I,R
+Standup M-Set Ammunition Manufacturing Material Efficiency I,R
 125mm Gatling AutoCannon I,H
 QA Immunity Module,M
 Partial Power Plant Manager: Reaction Control,L
@@ -4214,6 +4223,7 @@ Heavy Stasis Grappler I,M
 Corpum B-Type Medium Energy Neutralizer,H
 Domination Rocket Launcher,H
 425mm Prototype Gauss Gun,H
+Standup M-Set ME Research Accelerator I,R
 'Censer' Medium Cap Battery,M
 Medium 'Lone Ranger' Shield Booster,M
 Federation Navy Adaptive Nano Plating,L
@@ -4343,6 +4353,7 @@ Small I-a Polarized Armor Regenerator,L
 Gistii C-Type 5MN Microwarpdrive,M
 Federation Navy Co-Processor,L
 Imperial Navy Medium Capacitor Booster,M
+Tahron's Custom Heat Sink,L
 Federation Navy Energized Kinetic Membrane,L
 Large Core Defense Field Extender II,R
 Induced Signal Distortion Amplifier I,L
@@ -4554,8 +4565,9 @@ Capital Polycarbon Engine Housing I,R
 75mm Prototype Gauss Gun,H
 Corpii A-Type Adaptive Nano Plating,L
 Civilian Thermal Dissipation Field,M
+Torelle's Custom Magnetic Field Stabilizer,L
 Capital Powergrid Subroutine Maximizer II,R
-Standup M-Set Missile Projection II,R
+Standup M-Set Drone and Fighter Manufacturing Material Efficiency I,R
 Medium Auxiliary Nano Pump I,R
 Domination Armor Explosive Hardener,L
 Capital Anti-Kinetic Pump II,R
@@ -4587,6 +4599,7 @@ Tuvan's Modified EM Plating,L
 Gistum B-Type Explosive Deflection Amplifier,M
 Dread Guristas Shield Flux Coil,L
 Domination Warp Scrambler,M
+Standup XL-Set Thukker Structure and Component Manufacturing Efficiency,R
 Dread Guristas Micro Graviton Smartbomb,H
 Medium Hyperspatial Velocity Optimizer I,R
 Capital Core Defense Field Extender II,R

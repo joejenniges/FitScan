@@ -17,6 +17,7 @@ Tayra,2,5,4,3,0
 Miasmos,2,4,4,3,0
 Impel,2,2,7,2,0
 Abaddon,8,4,7,3,0
+Vrigate,0,0,0,0,0
 Wolf,5,2,5,2,0
 Cambion,4,5,3,2,0
 Ishkur,4,3,4,2,0
@@ -53,11 +54,12 @@ Coercer,8,2,3,3,0
 Redeemer,8,4,7,2,0
 Goru's Shuttle,0,0,0,0,0
 Claw,4,2,4,2,0
+Marshal,8,7,7,2,0
 Cruor,4,3,4,3,0
 Intaki Syndicate Catalyst,8,2,3,3,0
 Vargur,8,6,5,2,0
 Ishtar,4,4,6,2,0
-Molok,8,5,8,3,0
+Molok,8,6,8,3,0
 Kishar,2,2,4,2,0
 Vexor Quafe Edition,4,4,5,3,0
 Nemesis,5,4,2,2,0
@@ -96,7 +98,7 @@ Bhaalgorn,7,5,7,3,0
 Nidhoggur,5,6,5,3,0
 Lif,6,6,5,3,0
 Civilian Minmatar Shuttle,0,0,0,0,0
-Dagon,6,4,7,3,0
+Dagon,6,4,8,3,0
 Legion,0,0,0,3,5
 Condor,4,4,2,3,0
 Hurricane,7,4,6,3,0
@@ -198,6 +200,7 @@ Eris,8,2,4,2,0
 Lachesis,4,7,4,2,0
 Kestrel,4,4,2,3,0
 Vangel,6,4,5,2,0
+Enforcer,6,5,5,2,0
 Abaddon Tash-Murkon Edition,8,4,7,3,0
 Concord Police Battleship,8,6,6,3,0
 Panther,8,5,6,2,0
@@ -238,7 +241,7 @@ Bellicose,4,5,4,3,0
 Breacher,3,4,3,3,0
 Atron,4,3,3,3,0
 Algos,6,3,3,3,0
-Chemosh,5,4,8,3,0
+Chemosh,6,4,8,3,0
 Typhoon Fleet Issue,8,5,7,3,0
 Sleipnir,7,5,5,2,0
 Sigil,2,4,6,3,0
@@ -263,6 +266,7 @@ Armageddon,7,4,7,3,0
 Sabre,8,4,2,2,0
 Immolator,2,3,2,0,0
 Golem Nugoeihuvi Edition,8,7,4,2,0
+Prototype Seven,0,0,0,0,0
 Stratios,5,5,5,3,0
 Hulk,2,4,3,2,0
 Megathron Inner Zone Shipping Edition,7,4,8,3,0
@@ -287,6 +291,7 @@ Scorpion,5,8,5,3,0
 Mordus Frigate,4,3,2,3,0
 Ares,3,3,4,2,0
 Caracal,5,5,4,3,0
+Pacifier,4,4,4,2,0
 Proteus,0,0,0,3,5
 Omen Navy Issue,5,3,7,3,0
 Augoror,5,3,5,3,0
@@ -452,6 +457,7 @@ Prorator,2,2,4,2,0
 Sin,7,6,6,2,0
 Kronos Police Edition,8,4,7,2,0
 Griffin Navy Issue,3,5,2,3,0
+Vruiser,0,0,0,0,0
 Punisher Kador Edition,4,2,4,3,0
 Vigil,2,5,2,3,0
 Osprey,5,5,3,3,0

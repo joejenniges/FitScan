@@ -258,7 +258,7 @@ def getSubsystems():
                 subsystems[typeName] = {}
 
                 for key in validAttributes.keys():
-                    if key in typeAttr[typeID].keys():
+                    if typeID in typeAttr and key in typeAttr[typeID].keys():
                         subsystems[typeName][validAttributes[key]] = typeAttr[typeID][key]
         invTypes_file.close()
     print subsystems
