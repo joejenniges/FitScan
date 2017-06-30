@@ -246,6 +246,8 @@ class MainWindow(QtGui.QMainWindow):
         if (self.ui.pushButton_start.isEnabled()):
             self.ui.pushButton_start.setEnabled(False)
             self.ui.pushButton_stop.setEnabled(True)
+            self.ui.pushButton_stop.setStyleSheet("color: red")
+            self.ui.pushButton_start.setStyleSheet("color: grey")
             self.startClipboardThread()
 
     def stopClipboardThread(self):
@@ -260,6 +262,8 @@ class MainWindow(QtGui.QMainWindow):
         if (self.ui.pushButton_stop.isEnabled()):
             self.ui.pushButton_stop.setEnabled(False)
             self.ui.pushButton_start.setEnabled(True)
+            self.ui.pushButton_stop.setStyleSheet("color: grey")
+            self.ui.pushButton_start.setStyleSheet("color: green")
             self.stopClipboardThread()
 
     def setLabelMessage(self, label, message, color="black"):

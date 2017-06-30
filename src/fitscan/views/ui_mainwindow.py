@@ -160,7 +160,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.pushButton_start, 0, 1, 1, 1)
         self.pushButton_stop = QtGui.QPushButton(self.verticalLayoutWidget_4)
         self.pushButton_stop.setEnabled(False)
-        self.pushButton_stop.setStyleSheet("color: red")
+        self.pushButton_stop.setStyleSheet("color: grey")
         self.pushButton_stop.setObjectName("pushButton_stop")
         self.gridLayout.addWidget(self.pushButton_stop, 0, 2, 1, 1)
         self.verticalLayout_4.addLayout(self.gridLayout)
