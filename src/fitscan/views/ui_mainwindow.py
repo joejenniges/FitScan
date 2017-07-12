@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'resources\ui\mainwindow.ui'
 #
-# Created: Sun Dec 04 15:49:11 2016
+# Created: Wed Jul 12 17:04:59 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -160,7 +160,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.pushButton_start, 0, 1, 1, 1)
         self.pushButton_stop = QtGui.QPushButton(self.verticalLayoutWidget_4)
         self.pushButton_stop.setEnabled(False)
-        self.pushButton_stop.setStyleSheet("color: grey")
+        self.pushButton_stop.setStyleSheet("color: red")
         self.pushButton_stop.setObjectName("pushButton_stop")
         self.gridLayout.addWidget(self.pushButton_stop, 0, 2, 1, 1)
         self.verticalLayout_4.addLayout(self.gridLayout)
